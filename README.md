@@ -68,7 +68,7 @@ scoop install vscodium
 VSCodium is available in the [Snap Store](https://snapcraft.io/) as [Codium](https://snapcraft.io/codium), published by the [Snapcrafters](https://github.com/snapcrafters/codium) community.
 If your GNU/Linux distribution has support for [snaps](https://snapcraft.io/docs/installing-snapd):
 ```bash
-snap install codium
+snap install codium --classic
 ```
 
 #### <a id="install-with-package-manager"></a>Install with Package Manager (GNU/Linux)
@@ -101,8 +101,8 @@ If you want to build from source yourself, head over to [Microsoft's vscode repo
 Microsoft's build process (which we are running to build the binaries) does download additional files. This was brought up in [Microsoft/vscode#49159](https://github.com/Microsoft/vscode/issues/49159) and [Microsoft/vscode#45978](https://github.com/Microsoft/vscode/issues/45978). These are the packages downloaded during build:
 
 - Extensions from the Microsoft Marketplace:
-  - ms-vscode.node-debug2
-  - ms-vscode.node-debug
+  - [ms-vscode.node-debug2](https://marketplace.visualstudio.com/items?itemName=ms-vscode.node-debug2)
+  - [ms-vscode.node-debug](https://marketplace.visualstudio.com/items?itemName=ms-vscode.node-debug)
 - From [Electron releases](https://github.com/electron/electron/releases) (using [gulp-atom-electron](https://github.com/joaomoreno/gulp-atom-electron))
   - electron
   - ffmpeg
